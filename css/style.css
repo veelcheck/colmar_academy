@@ -1,0 +1,57 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    width: 95%;
+    max-width: 1200px;
+    align-items: center;
+}
+
+.hidden {
+    display: none;
+}
+
+
+ul {
+    padding: 0;
+}
+
+.logo {
+    border: 1px solid green;
+}
+
+.nav__link,
+.footer__link,
+.read,
+.home-logo {
+    text-decoration: none;
+}
+
+.nav__item,
+.footer__item {
+    list-style: none;
+    border: 1px solid red;
+}
+
+
+
+/* NAV BAR */
+
+.d-flex--mobile {
+    display: flex;
+}
+
+.nav__list {
+   
+}
