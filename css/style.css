@@ -21,10 +21,12 @@ video {
 
 h1, h2, h3, p {
     margin: 0;
+    line-height: .9;
 }
 
 h1 {
     margin-bottom: 2rem;
+    font-size: 2rem;
 }
 
 h2 {
@@ -33,12 +35,13 @@ h2 {
 }
 
 .container {
-    width: 90%;
+    width: 95%;
     max-width: 1200px;
     margin: 0 auto;
 }
 
-.hidden {
+.hidden,
+.hidden--mid-scr {
     display: none;
 }
 
@@ -99,14 +102,13 @@ nav {
     padding: 2rem 0;
 }
 
-
-
 .hero__text p {
     margin-bottom: 1.5rem;
 }
 
 .btn-wrapper {
     width: 100%;
+    max-width: 576px;
     text-align: center;
     background-color: #746d6d;
     padding: .5em 0;
@@ -148,6 +150,7 @@ nav {
 
 .course__topic {
     background-color: rgb(194, 201, 207);
+    max-width: 576px;
     margin-bottom: .5rem;
     padding: 1rem 1rem;
 }
@@ -164,3 +167,83 @@ footer {
     font-size: .7rem;
     padding: 1rem 0;
 }
+
+/* MEDIA QUERY */
+
+@media (min-width:639px) {
+    .hidden {
+        display: unset;
+    }
+
+    .mobile-img {
+        display: none;
+    }
+
+    .d-flex {
+        display: flex;
+    }
+
+    .container--mobile {
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .hero__img,
+    .info__img,
+    .thesis__video {
+        width: 60%;
+
+    }
+
+    .hero__text,
+    .info__aside,
+    .thesis__aside {
+        width: 40%;
+        padding-left: 2.5%;
+    }
+
+    .hero,
+    .info,
+    .courses,
+    .thesis {
+        padding: 2rem 0;
+    }
+
+    .hero__text {
+        padding-top: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+    }
+     
+    .btn-wrapper {
+        max-width: 248px;
+        background-color: rgb(26, 17, 17);
+    }
+    
+    .info__img__p {
+        padding-bottom: 2rem;
+    }
+
+    .info__aside,
+    .thesis__aside__info {
+        padding-left: 1rem;
+    }
+
+    .info__aside-details,
+    .thesis__details-aside {
+        padding-left: 1%;
+    }
+
+
+    .background {
+        background-color: rgb(194, 201, 207);
+        padding-top: 1rem;
+    }
+
+    .courses {
+        background-color: rgb(194, 201, 207);
+    }
+}
+

@@ -14,11 +14,11 @@
         <nav>
             <div class="container">
                 <ul class="nav__list d-flex--mobile">
-                    <li class="nav__item"><a href="#" class="home-logo"><img src="resources/images/ic-logo.svg" alt="logo" class="logo"><span class="hidden">colmar academy</span></a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-on-campus.svg" alt="on campus icon" class="icon"><span class="hidden">On Campus</span></a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-online.svg" alt="online icon" class="icon"><span class="hidden">Online</span></a></li>
-                    <li class="nav__item hidden"><a href="#" class="nav__link">For Companies</a></li>
-                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-login.svg" alt="login icon" class="icon"><span class="hidden">Sign In</span></a></li>
+                    <li class="nav__item"><a href="#" class="home-logo"><img src="resources/images/ic-logo.svg" alt="logo" class="logo"><span class="hidden--mid-scr">colmar academy</span></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-on-campus.svg" alt="on campus icon" class="icon"><span class="hidden--mid-scr">On Campus</span></a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-online.svg" alt="online icon" class="icon"><span class="hidden--mid-scr">Online</span></a></li>
+                    <li class="nav__item hidden--mid-scr"><a href="#" class="nav__link">For Companies</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link"><img src="resources/images/ic-login.svg" alt="login icon" class="icon"><span class="hidden--mid-scr">Sign In</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -26,7 +26,7 @@
     <section class="hero">
         <div class="container--mobile d-flex">
             <div class="hero__img"><img src="resources/images/banner.jpg" alt="people sitting at the table and taking notes" class="banner"></div>
-            <div class="hero__text">
+            <div class="hero__text d-flex">
                 <h1>Learn something<br>new everyday</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                 <div class="btn-wrapper">
@@ -40,12 +40,13 @@
             <div class="info__img hidden">
                 <img src="resources/images/information-main.jpg" alt="man reading a textbook">
                 <h2>It doesn't hurt to keep practicing</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse temporibus molestias repellendus deleniti nisi rerum minima maxime tempora exercitationem repellat! Explicabo impedit quaerat iste doloremque.</p>
+                <p class="info__img__p">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Esse temporibus molestias repellendus deleniti nisi rerum minima maxime tempora exercitationem repellat! Explicabo impedit quaerat iste doloremque.</p>
+                <p class="info__img">Emanuel, Sr Strategist at Hiring.com</p>
             </div>
-            <sidebar class="info__aside sidebar">
-                <div class="info__aside-details">
+            <sidebar class="info__aside ">
+                <div class="info__aside-details d-flex">
                     <div class="img-aside">
-                        <img src="resources/images/information-orientation.jpg" alt="shadows of walking people" class="hidden">
+                        <img src="resources/images/information-orientation.jpg" alt="shadows of walking people" class="hidden--mid-scr">
                         <img src="resources/images/information-orientation-mobile.jpg" alt="shadows of walking people" class="mobile-img">
                     </div>  
                     <div class="details-aside">
@@ -55,9 +56,9 @@
                     </div>
                 </div>
 
-                <div class="info__main-details">
+                <div class="info__aside-details d-flex">
                     <div class="img-aside">
-                        <img src="resources/images/information-campus.jpg" alt="map on the wall" class="hidden">
+                        <img src="resources/images/information-campus.jpg" alt="map on the wall" class="hidden--mid-scr">
                         <img src="resources/images/information-campus-mobile.jpg" alt="map on the wall" class="mobile-img">
                     </div>
                     <div class="details-aside">
@@ -67,10 +68,11 @@
                     </div>
                 </div>   
 
-                <div class="info__main-details">
+                <div class="info__aside-details d-flex background">
                     <div class="img-aside">
-                        <img src="resources/images/information-guest-lecture.jpg" alt="old man" class="hidden">
+                        <img src="resources/images/information-guest-lecture.jpg" alt="old man" class="hidden--mid-scr">
                         <img src="resources/images/information-guest-lecture-mobile.jpg" alt="old man" class="mobile-img">
+                    </div>
                     <div class="details-aside">
                         <h3>Special gueast lecture</h3>
                         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
@@ -140,22 +142,22 @@
                 <h3 class="hidden">Reimagine urban</h3>
                 <p class="hidden">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, itaque saepe omnis odit odio ullam dolorum nostrum sit numquam temporibus nisi fuga tenetur alias, hic dignissimos eum laborum accusantium. Itaque sapiente consectetur architecto fuga fugiat?</p>
             </div>
-            <sidebar class="thesis__aside aside hidden">
-                <div class="thesis__aside__info">
-                    <div class="img-aside">
-                        <img src="resources/images/thesis-fisma.jpg" alt="design process">
+            <sidebar class="thesis__aside hidden">
+                <div class="thesis__aside__info d-flex">
+                    <div class="thesis__img-aside">
+                        <img src="resources/images/thesis-fisma.jpg" alt="design process" class="hidden--mid-scr">
                     </div>  
-                    <div class="details-aside">
+                    <div class="thesis__details-aside background">
                         <h3>Fisma: Design and Prototype</h3>
                         <p>Designer showcase of new prototype product</p>
                     </div>
                 </div>
 
                 <div class="thesis__aside__info">
-                    <div class="img-aside">
-                        <img src="resources/images/thesis-now-and-then.jpg" alt="skyscraper">
+                    <div class="thesis__img-aside">
+                        <img src="resources/images/thesis-now-and-then.jpg" alt="skyscraper" class="hidden--mid-scr">
                     </div>  
-                    <div class="details-aside">
+                    <div class="thesis__details-aside">
                         <h3>Now and then</h3>
                         <p>Research study about New York</p>
                     </div>
