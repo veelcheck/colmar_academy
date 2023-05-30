@@ -2,56 +2,168 @@
     box-sizing: border-box;
 }
 
+html {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.4;
+    letter-spacing: .1rem;
+}
+
 body {
     margin: 0;
 }
 
-img {
+img,
+video {
     display: block;
     max-width: 100%;
     height: auto;
 }
 
+h1, h2, h3, p {
+    margin: 0;
+}
+
+h1 {
+    margin-bottom: 2rem;
+}
+
+h2 {
+    margin: 1rem 0;
+    font-size: 2rem;
+}
+
 .container {
-    width: 95%;
+    width: 90%;
     max-width: 1200px;
-    align-items: center;
+    margin: 0 auto;
 }
 
 .hidden {
     display: none;
 }
 
-
 ul {
     padding: 0;
-}
-
-.logo {
-    border: 1px solid green;
 }
 
 .nav__link,
 .footer__link,
 .read,
-.home-logo {
-    text-decoration: none;
+.home-logo,
+.btn {
+    text-decoration: none;   
 }
 
 .nav__item,
 .footer__item {
     list-style: none;
-    border: 1px solid red;
 }
 
-
+.section-title {
+    text-align: center;
+    font-size: 700;
+}
 
 /* NAV BAR */
 
 .d-flex--mobile {
-    display: flex;
+    display: flex; 
+    margin: .5em auto;
+    padding: 0 1em;
+}
+
+nav {
+    height: 4rem;
+    padding-top: .7em;
 }
 
 .nav__list {
-   
+   align-items: first baseline;
+   justify-content: space-between; 
+}
+
+/* HERO SECTION */
+
+.hero {
+    background-color: rgb(194, 201, 207);
+    font-weight: 700;
+}
+
+.container--mobile {
+    width: 100%;
+}
+
+.hero__text {
+    width: 90%;
+    margin: 0 auto;
+    padding: 2rem 0;
+}
+
+
+
+.hero__text p {
+    margin-bottom: 1.5rem;
+}
+
+.btn-wrapper {
+    width: 100%;
+    text-align: center;
+    background-color: #746d6d;
+    padding: .5em 0;
+    margin-bottom: .5rem;
+}
+
+.btn {
+    color:#fff;
+}
+
+/* INFO SECTION */
+
+.info {
+    padding: 1rem 0 1rem;
+}
+
+.info p {
+    font-size: .7rem;
+}
+
+.mobile-img {
+    margin-bottom: 1rem;
+}
+
+.details-aside {
+    margin-bottom: 1rem;
+}
+
+.read {
+    color:rgb(76, 158, 190);
+    font-size: .7rem;
+}
+
+/* COURSE SECTION */
+
+.courses {
+    padding-bottom: 1rem;
+}
+
+.course__topic {
+    background-color: rgb(194, 201, 207);
+}
+
+h3 {
+    margin-bottom: .5rem;
+    padding: 1rem 1rem;
+}
+
+/* THESIS SECTION */
+
+.thesis {
+    padding-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+    font-size: .7rem;
+    padding: 1rem 0;
 }
