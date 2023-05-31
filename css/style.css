@@ -53,6 +53,23 @@ ul {
     text-decoration: none;   
 }
 
+.footer__link,
+.nav__link {
+    color: black;
+}
+
+.footer__link:focus,
+.footer__link:hover,
+.nav__link:focus,
+.nav__link:hover {
+    opacity: .75; 
+}
+
+.footer__link:hover,
+.nav__link:hover {
+    color:rgb(133, 62, 62);
+}
+
 .nav__item,
 .footer__item {
     list-style: none;
@@ -202,7 +219,6 @@ footer {
     .info__img,
     .thesis__video {
         width: 60%;
-
     }
 
     .hero__text,
@@ -233,12 +249,6 @@ footer {
     
     .info__img__p {
         padding-bottom: 2rem;
-    }
-
-
-    .info__aside,
-    .thesis__aside {
-        padding-left: 1rem;
     }
 
     .info__aside-details,
@@ -297,10 +307,65 @@ footer {
     .footer__item + .footer__item {
         margin-left: 2%;
     }
-
-    .footer__link {
-        color: black;
-    }
-
 }
 
+@media (min-width:850px) {
+    .icon {
+        display: none;
+    }
+
+    .hidden--mid-scr {
+        display: revert;   
+    }
+
+    .nav__list {
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .brand_name {
+        text-transform: uppercase;
+    }
+
+    .bold_letters {
+        font-weight: 700;
+    } 
+
+    .nav__item__logo {
+        align-items: center;
+    }
+
+    .push--right-bg {
+        margin-right: auto;
+    }
+
+    .nav__item + .nav__item {
+        margin-left: 1rem;
+    }
+
+    .hero__text,
+    .info__aside,
+    .thesis__aside {
+        width: 40%;
+        padding-left: 5%;
+    }
+
+    .info__img-aside {
+        width: 35%;
+    }
+
+    .info__details-aside {
+        width: 65%;
+    }
+
+    .info__aside-details,
+    .thesis__details-aside {
+        padding: 1rem;
+    }
+
+    .info__aside-details {
+        border-left: 1px solid rgb(194, 201, 207);
+    }
+
+
+}
