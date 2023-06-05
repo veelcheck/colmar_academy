@@ -3,9 +3,9 @@
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', sans-serif;
     line-height: 1.4;
-    letter-spacing: .1rem;
+    letter-spacing: .1em;
 }
 
 body {
@@ -25,7 +25,7 @@ h1, h2, h3, p {
 }
 
 h1 {
-    margin-bottom: 2rem;
+    margin-bottom: 2em;
     font-size: 2rem;
 }
 
@@ -33,6 +33,7 @@ h1 {
     width: 95%;
     max-width: 1200px;
     margin: 0 auto;
+    
 }
 
 .hidden,
@@ -54,19 +55,23 @@ ul {
 }
 
 .footer__link,
-.nav__link {
+.nav__link,
+.course__link {
     color: black;
 }
 
 .footer__link:focus,
 .footer__link:hover,
 .nav__link:focus,
-.nav__link:hover {
+.nav__link:hover,
+.course__link:focus,
+.course__link:hover {
     opacity: .75; 
 }
 
 .footer__link:hover,
-.nav__link:hover {
+.nav__link:hover,
+.course__link:hover {
     color:rgb(133, 62, 62);
 }
 
@@ -76,28 +81,36 @@ ul {
 }
 
 .info-title {
-    margin: 1rem 0;
+    margin: 1em 0;
     font-size: 2rem;
 }
 
 .section-title {
     text-align: center;
     font-weight: 700;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
     font-size: 2rem;
+}
+
+.hero,
+.info,
+.courses,
+.thesis {
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 /* NAV BAR */
 
 .d-flex--mobile {
     display: flex; 
-    margin: .5rem auto;
+    margin: .5em auto;
     padding: 0 1rem;
 }
 
 nav {
-    height: 4rem;
-    padding-top: .7rem;
+    height: 4em;
+    padding-top: .7em;
 }
 
 .nav__list {
@@ -119,11 +132,11 @@ nav {
 .hero__text {
     width: 95%;
     margin: 0 auto;
-    padding: 2rem 0;
+    padding: 2em 0;
 }
 
 .hero__text p {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.5em;
 }
 
 .btn-wrapper {
@@ -131,8 +144,8 @@ nav {
     max-width: 576px;
     text-align: center;
     background-color: #746d6d;
-    padding: .5rem 0;
-    margin-bottom: .5rem;
+    padding: .5em 0;
+    margin-bottom: .5em;
 }
 
 .btn {
@@ -142,24 +155,22 @@ nav {
 /* INFO SECTION */
 
 .info {
-    padding: 1rem 0 1rem;
+    padding: 1em 0;
 }
 
 .info p,
 .thesis p {
     font-size: .9rem;
-    padding-top: .5rem;
+    padding-top: .5em;
 }
 
 .mobile-img {
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .info__details-aside,
 .thesis__details-aside {
-    padding-bottom: 1rem;
-    padding-top: 1rem;
-    
+    padding-block: 1em;
 }
 
 .read {
@@ -171,27 +182,27 @@ nav {
 /* COURSE SECTION */
 
 .courses {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
 .course__topic {
     background-color: rgb(194, 201, 207);
     max-width: 576px;
-    margin-bottom: .5rem;
+    margin-bottom: .5em;
     padding: 1rem;
 }
 
 /* THESIS SECTION */
 
 .thesis {
-    padding-bottom: 1rem;
+    padding-bottom: 1em;
 }
 
 /* FOOTER */
 
 footer {
     font-size: .7rem;
-    padding: 1rem 0;
+    padding: 1em 0;
 }
 
 /* MEDIA QUERY */
@@ -214,6 +225,15 @@ footer {
         max-width: 1200px;
         margin: 0 auto;
     }
+
+    img,
+    video,
+    .btn-wrapper,
+    .round-corners,
+    .col {
+        border-radius: 10px;
+    }
+
 
     .hero__img,
     .info__img,
@@ -248,12 +268,21 @@ footer {
     }
     
     .info__img__p {
-        padding-bottom: 2rem;
+        padding-bottom: 2em;
+    }
+
+
+    .info__details-aside {
+        padding-top: 0;
     }
 
     .info__aside-details,
     .thesis__details-aside {
         padding-left: 2%;
+    }
+
+    .top-padding {
+        padding-top: 1em;
     }
 
     .background {
@@ -270,7 +299,7 @@ footer {
     }
 
     .frst-row {
-        margin-bottom: 1rem;
+        margin-bottom: 1em;
     }
 
     .col {
@@ -295,9 +324,8 @@ footer {
         padding: 1rem;
     }
 
-
     .title_under_video {
-        padding: 1rem 0;
+        padding: 1em 0;
     }
 
     .push--right {
@@ -350,22 +378,44 @@ footer {
         padding-left: 5%;
     }
 
-    .info__img-aside {
+    .info {
+        padding-block: 0;
+    }
+
+    .info__img {
+        padding-block: 2em;
+    }
+
+    
+    .info__aside-details,
+    .thesis__aside__info {
+        padding: 1em 1rem 1em;
+        margin-bottom: 1px;
+        align-items: center;
+    }
+
+    
+    .info__img-aside,
+    .thesis__img-aside {
         width: 35%;
     }
 
-    .info__details-aside {
-        width: 65%;
-    }
-
-    .info__aside-details,
+    .info__details-aside,
     .thesis__details-aside {
-        padding: 1rem;
+        width: 65%;
+        padding-left: 5%;
     }
 
-    .info__aside-details {
-        border-left: 1px solid rgb(194, 201, 207);
+    .top-padding {
+        padding-top: 1em;
     }
 
+    .border-bottom {
+        border-bottom: 1px solid rgb(194, 201, 207);
+    }
+
+    .border-top {
+        border-top: 1px solid rgb(194, 201, 207);
+    }
 
 }
