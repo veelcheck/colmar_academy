@@ -267,23 +267,25 @@ footer {
         background-color: rgb(26, 17, 17);
     }
     
-    .info__img__p {
-        padding-bottom: 2em;
-    }
-
-
-    .info__details-aside {
-        padding-top: 0;
-    }
-
     .info__aside-details,
     .thesis__details-aside {
         padding-left: 2%;
     }
 
-    .top-padding {
+    .info__img__p {
+        padding-bottom: 2em;
+    }
+
+    .info__details-aside {
+        padding-top: 0;
+    }
+
+    .add-top-mid {
         padding-top: 1em;
     }
+
+   
+
 
     .background {
         background-color: rgb(194, 201, 207);
@@ -406,7 +408,11 @@ footer {
         padding-left: 5%;
     }
 
-    .top-padding {
+    .add-top-mid {
+        padding-top: 0;
+    }
+
+    .add-top-bg {
         padding-top: 1em;
     }
 
