@@ -179,11 +179,6 @@ nav {
     font-size: .7rem;
 }
 
-.read--light {
-    color:rgb(200, 226, 236);
-    font-size: .7rem;
-}
-
 .read:hover,
 .read--light:hover {
     font-size: 1rem;
@@ -243,6 +238,11 @@ footer {
     .round-corners,
     .col {
         border-radius: 10px;
+    }
+
+    .read--light {
+        color:rgb(200, 226, 236);
+        font-size: .7rem;
     }
 
     .hero__img,
