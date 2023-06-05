@@ -234,7 +234,6 @@ footer {
         border-radius: 10px;
     }
 
-
     .hero__img,
     .info__img,
     .thesis__video {
@@ -268,8 +267,9 @@ footer {
     }
     
     .info__aside-details,
-    .thesis__details-aside {
+    .thesis__aside__info {
         padding-left: 2%;
+        border: 1px solid red;
     }
 
     .info__img__p {
@@ -283,9 +283,6 @@ footer {
     .add-top-mid {
         padding-top: 1em;
     }
-
-   
-
 
     .background {
         background-color: rgb(194, 201, 207);
@@ -388,12 +385,22 @@ footer {
         padding-block: 2em;
     }
 
-    
+    .info__aside {
+        padding-top: 2em;
+    }
+
     .info__aside-details,
     .thesis__aside__info {
         padding: 1em 1rem 1em;
-        margin-bottom: 1px;
         align-items: center;
+    }
+
+    .no-top {
+        padding-top: 0;
+    }
+
+    .no-bottom {
+        padding-bottom: 0;
     }
 
     
@@ -410,10 +417,6 @@ footer {
 
     .add-top-mid {
         padding-top: 0;
-    }
-
-    .add-top-bg {
-        padding-top: 1em;
     }
 
     .border-bottom {
