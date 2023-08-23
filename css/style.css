@@ -65,8 +65,6 @@ ul {
 .footer__link:hover,
 .nav__link:focus,
 .nav__link:hover,
-.course__link:focus,
-.course__link:hover,
 .btn-wrapper:focus,
 .btn-wrapper:hover {
     opacity: .75; 
@@ -244,6 +242,11 @@ footer {
         border-radius: 10px;
     }
 
+    .desktop-img {
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+
     .read--light {
         color:rgb(200, 226, 236);
         font-size: .7rem;
@@ -292,6 +295,10 @@ footer {
         padding-left: 4%;
     }
 
+    .card__text {
+        padding-right: .5em;
+    }
+
     .info__img__p {
         padding-bottom: 2em;
     }
@@ -313,17 +320,12 @@ footer {
     }
 
     .wrapper {
-        width: 80%;
         margin: 0 auto;
     }
 
     .col:hover {
         box-shadow: 10px 10px 5px rgb(165, 177, 163);
     } 
-
-    .course__link:hover {
-        font-weight: 700;
-    }
 
     .frst-row {
         margin-bottom: 1em;
@@ -450,5 +452,9 @@ footer {
 
     .border-top {
         border-top: 1px solid rgb(105, 151, 124);
+    }
+
+    .wrapper {
+        width: 80%;
     }
 }
